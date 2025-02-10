@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <form id="loginForm">
+        <div class="company-header">
+          <img
+            class="company-logo"
+            src="assets/logos/company-logo.svg"
+            alt=""
+          />
+          <span class="company-name">Preview</span>
+        </div>
+        <h1>Welcome Back</h1>
+
+        <div class="form-group">
+          <input type="email" id="email" aria-label="Email address" required />
+          <label for="email">Email</label>
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="password" aria-label="Password" />
+          <label for="password">Password</label>
+        </div>
+
+        <div class="form-options">
+          <div class="keep-me-logged-in">
+            <input type="checkbox" id="keepLoggedIn" />
+            <label for="keepLoggedIn">Keep me logged in</label>
+          </div>
+
+          <div class="forgot-password">
+            <a href="../confirm-email-form/confirm-email.html"
+              >Forgot Password?</a
+            >
+          </div>
+        </div>
+
+        <button type="submit" id="login" class="log-in">Log in</button>
+
+        <div class="or-divider">
+          <span>or</span>
+        </div>
+
+        <div class="social-buttons">
+          <button class="social-btn google" aria-label="Log in with Google">
+            <img src="assets/icons/google.svg" alt="Google Icon" />
+            <p>Log in with Google</p>
+          </button>
+
+          <button class="social-btn apple" aria-label="Log in with Apple">
+            <img src="assets/icons/apple.svg" alt="Apple Icon" />
+            <p>Log in with Apple</p>
+          </button>
+        </div>
+
+        <div class="signup-link">
+          <p>
+            Don't have an account?
+            <a href="../signup-form/signup.html">Sign up</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
